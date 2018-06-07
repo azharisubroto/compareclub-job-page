@@ -158,7 +158,7 @@ small {
 }
 
 .text-bold {
-	font-weight: bold;
+	font-weight: bold!important;
 }
 
 .text-medium {
@@ -166,7 +166,6 @@ small {
 }
 
 .btn {
-	font-family: "Product Sans";
 
 	&.btn-warning {
 		background: #F5A623;
@@ -202,6 +201,16 @@ small {
 		color: #fff;
 		opacity:.9;
 	}
+
+	&:active, &:focus {
+		opacity: .9!important;
+		color: #fff!important;
+		background: #7568a7!important;
+		background: -moz-linear-gradient(left, #7568a7 0%, #af3b60 100%)!important;
+		background: -webkit-linear-gradient(left, #7568a7 0%,#af3b60 100%)!important;
+		background: linear-gradient(to right, #7568a7 0%,#af3b60 100%)!important;
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7568a7', endColorstr='#af3b60',GradientType=1 )!important;
+	} 
 }
 
 .header {
@@ -300,6 +309,10 @@ small {
 	}
 }
 
+.embed-responsive {
+	border-radius: 7px;
+}
+
 .testimonial {
 	padding: 41px 64px;
 	background: #4A4A4A;
@@ -390,6 +403,75 @@ small {
 		height: 48px;
 		margin-bottom: 25px;
 	}
+
+	input[type=radio] {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+input[type=checkbox]:not(old),
+input[type=radio   ]:not(old){
+  width     : 2em;
+  margin    : 0;
+  padding   : 0;
+  font-size : 1em;
+  opacity   : 0;
+}
+
+input[type=checkbox]:not(old) + label,
+input[type=radio   ]:not(old) + label{
+  display      : inline-block;
+  margin-left  : -2em;
+  line-height  : 1.5em;
+}
+
+input[type=checkbox]:not(old) + label > span,
+input[type=radio   ]:not(old) + label > span{
+  display          : inline-block;
+  width            : 15px;
+  height           : 15px;
+  margin           : 0.25em 0.5em 0.25em 0;
+  border           : 0.0625em solid rgb(192,192,192);
+  border-radius    : 90px;
+  background       : #fff;
+  vertical-align   : bottom;
+  position: relative;
+}
+
+input[type=checkbox]:not(old):checked + label > span,
+input[type=radio   ]:not(old):checked + label > span{
+  background-image :    -moz-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :     -ms-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :      -o-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image : -webkit-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :         linear-gradient(rgb(224,224,224),rgb(240,240,240));
+}
+
+input[type=checkbox]:not(old):checked + label > span:before{
+  content     : '✓';
+  display     : block;
+  width       : 1em;
+  color       : rgb(153,204,102);
+  font-size   : 0.875em;
+  line-height : 1em;
+  text-align  : center;
+  text-shadow : 0 0 0.0714em rgb(115,153,77);
+  font-weight : bold;
+}
+
+input[type=radio]:not(old):checked + label > span > span{
+  display          : block;
+  width            : 7px;
+  height           : 7px;
+  border-radius    : 90px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background       : $primary;
 }
 
 footer {

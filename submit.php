@@ -31,9 +31,17 @@
 										<input type="file" id="upload" class="d-none">
 
 										<p>From time to time, we would like to send you news and updates about Alternative Media, as well as information regarding live vacancies that may be of interest to you. If you would like to receive this information, please click Yes:</p>
-
-										<input type="radio" value="yes" name="subscribe"> Yes<br>
-										<input type="radio" value="no" name="subscribe"> No
+										
+										<div>
+										  <input id="yes" type="radio" name="subscribe" value="yes">
+										  <label for="yes"><span><span></span></span>Yes</label>
+										</div>
+										
+										<div>
+										  <input id="no" type="radio" name="subscribe" value="no">
+										  <label for="no"><span><span></span></span>No</label>
+										</div>
+										
 
 										<div class="mt-4">
 											<button class="btn btn-gra text-light">Submit Your Application</button>

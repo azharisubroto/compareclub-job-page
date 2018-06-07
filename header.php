@@ -23,7 +23,7 @@
 					<img src="img/logo.png" alt="" width="90">
 				</div>
 				<div class="col-md-4 text-right">
-					<a href="submit.php" class="btn btn-light text-primary px-4 d-md-inline-block d-none">Submit Your CV</a>
+					<a href="submit.php" class="btn btn-light text-primary px-4 d-md-inline-block d-none text-bold">Submit Your CV</a>
 				</div>
 			</div>
 
@@ -36,7 +36,7 @@
 
 			<div class="row d-block d-md-none text-center mt-5">
 				<div class="col-md-12">
-					<a href="submit.php" class="btn btn-light text-primary px-4">Submit Your CV</a>
+					<a href="submit.php" class="btn btn-light text-primary px-4 text-bold">Submit Your CV</a>
 				</div>
 			</div>
 		</div>
