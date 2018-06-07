@@ -365,8 +365,16 @@ small {
 
 		@include media-breakpoint-down(xs) {
 			position: relative;
-			width: 100%;
-			height: auto;
+			width: 100%!important;
+			height: auto!important;
+
+			img {
+				position: relative!important;
+				max-width: 100%!important;
+				right: 0;
+				left: 0;
+				height: auto!important;
+			}
 		}
 
 		&:before {
