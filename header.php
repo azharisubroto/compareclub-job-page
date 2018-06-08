@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="css/theme.min.css">
 	<title>Job - Alternative Media</title>
 	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>

@@ -1,5 +1,8 @@
 var $ = jQuery;
 
+function recaptchaCallback() {
+    $('#submitbtn').removeAttr('disabled');
+};
 $(document).ready(function($){
 	$('#job-apply').validate({
 		rules: {
@@ -12,4 +15,5 @@ $(document).ready(function($){
 		    }
 		}
 	});
+
 });
