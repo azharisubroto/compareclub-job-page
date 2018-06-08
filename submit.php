@@ -9,31 +9,31 @@
 							
 							<div class="row">
 								<div class="col-lg-8 col-md-12 pr-md-5">
-									<form action="#" class="cv-submit">
+									<form action="#" class="cv-submit" id="job-apply">
 									
-										<label for="name">
-											Full Name
+										<label for="name" class="d-block">
+											Full Name <span class="text-danger">*</span>
 										</label>
-										<input id="name" type="text" name="name" class="form-control" placeholder="E.g. Nymphadora tonx">
+										<input id="name" type="text" name="name" class="form-control" placeholder="E.g. Nymphadora tonx" required>
 
-										<label for="email">
-											Email
+										<label for="email" class="d-block">
+											Email <span class="text-danger">*</span>
 										</label>
-										<input id="email" type="text" name="email" class="form-control" placeholder="E.g. mail@example.com">
+										<input id="email" type="email" name="email" class="form-control" placeholder="E.g. mail@example.com" required>
 
-										<label for="mobile_number">
-											Mobile Number
+										<label for="mobile_number" class="d-block">
+											Mobile Number <span class="text-danger">*</span>
 										</label>
-										<input id="mobile_number" type="text" name="mobile_number" class="form-control" placeholder="E.g. +628122974346">
+										<input id="mobile_number" type="text" name="mobile_number" class="form-control" placeholder="E.g. +628122974346" required>
 
-										<p class="mt-4">Upload your CV (.doc, .docx, .pdf, .txt, max file size: 5MB):</p>
+										<p class="mt-4">Upload your CV (.doc, .docx, .pdf, .txt, max file size: 5MB): <span class="text-danger">*</span></p>
 										<label for="upload" class="btn btn-warning btn-block text-left mb-4">Click here to select your file</label>
-										<input type="file" id="upload" class="d-none">
+										<input type="file" id="upload" class="d-none" required>
 
 										<p>From time to time, we would like to send you news and updates about Alternative Media, as well as information regarding live vacancies that may be of interest to you. If you would like to receive this information, please click Yes:</p>
 										
 										<div>
-										  <input id="yes" type="radio" name="subscribe" value="yes">
+										  <input id="yes" type="radio" name="subscribe" value="yes" checked>
 										  <label for="yes"><span><span></span></span>Yes</label>
 										</div>
 										
@@ -44,7 +44,7 @@
 										
 
 										<div class="mt-4">
-											<button class="btn btn-gra text-light">Submit Your Application</button>
+											<input type="submit" class="btn btn-gra text-light" value="Submit Your Application">
 										</div>
 
 									</form>

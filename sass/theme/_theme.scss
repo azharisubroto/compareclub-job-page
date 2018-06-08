@@ -401,10 +401,18 @@ small {
 }
 
 .cv-submit {
+	position: relative;
 	label {
 		color: #777777;
+
+		&.error {
+			color: red;
+			top: -15px;
+			position: relative;
+			margin: 0;
+		}
 	}
-	input[type="text"]{
+	input[type="text"], input[type="email"]{
 		box-shadow: 0 5px 15px rgba(119, 119, 119, 0.15);
 		border: 1px solid #979797;
 		padding: 13px 16px;
