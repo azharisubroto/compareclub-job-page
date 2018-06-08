@@ -47,7 +47,7 @@
 										</div>
 										
 										<div class="mt-4">
-											<input type="submit" class="btn btn-gra text-light" value="Submit Your Application" id="submitbtn" disabled>
+											<input type="submit" class="btn btn-gra text-light" value="Submit Your Application" id="submitbtn">
 										</div>
 
 									</form>

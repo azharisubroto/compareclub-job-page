@@ -1,7 +1,7 @@
 var $ = jQuery;
 
 function recaptchaCallback() {
-    $('#submitbtn').removeAttr('disabled');
+    //$('#submitbtn').removeAttr('disabled');
 };
 $(document).ready(function($){
 	$('#job-apply').validate({
