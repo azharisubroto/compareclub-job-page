@@ -27,8 +27,10 @@
 										<input id="mobile_number" type="text" name="mobile_number" class="form-control" placeholder="E.g. +628122974346" required>
 
 										<p class="mt-4">Upload your CV (.doc, .docx, .pdf, .txt, max file size: 5MB): <span class="text-danger">*</span></p>
-										<label for="upload" class="btn btn-warning btn-block text-left mb-4">Click here to select your file</label>
-										<input type="file" id="upload" class="d-none" required>
+										<div class="file-upload">
+											<label for="upload" class="btn btn-warning btn-block text-left mb-4">Click here to select your file</label>
+											<input type="file" id="upload" class="upload-field" required>
+										</div>
 
 										<p>From time to time, we would like to send you news and updates about Alternative Media, as well as information regarding live vacancies that may be of interest to you. If you would like to receive this information, please click Yes:</p>
 										
